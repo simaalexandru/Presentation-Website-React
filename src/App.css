@@ -1,0 +1,348 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  
+}
+
+.api{
+  height:100vh !important;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900');
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+  position: relative;
+  display: table-cell;
+  width: 63px;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 32px;
+  color: #fff;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#212121;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#5fa2db;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+
+/* VIDEO */
+*{ box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/*HOME*/
+
+.wrap-home {
+  background-color: #3498db;
+  width: 100%;
+  height: 100vh;
+}
+.cont-home {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 100px;
+  text-align: center;
+}
+.wrap-page {
+  position: relative;
+  background-color: #3498db;
+  width: 100%;
+  height: 100%;
+}
+.cont-page {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.logo {
+  background: url('./assets/images/logo-react.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+.heading {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+.heading-page {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  padding: 30px;
+}
+.sub-heading {
+  color: #fff;
+  font-weight: 200;
+}
+
+.button {
+  width: 200px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 2px solid #f7f7f7;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow:hidden;
+  transition: .3s;
+  font-weight: 600;
+  font-size: 25px;
+  color: #fff;
+}
+.button:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+}
+.paragraph {
+  color: #fff;
+  font-weight: 200;
+  padding: 30px;
+}
+
+.ac-container {
+  width: 100%;
+  text-align: left;
+  display: block;
+  padding: 50px; }
+
+.ac-container label {
+  padding: 2% 20px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  color: #9d9c9c;
+  background: #ecf0f1;
+  font-style: normal; }
+
+.ac-container label:hover {
+  background: #bdc3c7;
+  color: #fff; }
+
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover {
+  background: #ecf0f1;
+  color: #000; }
+
+.ac-container label:hover:after,
+.ac-container input:checked + label:after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 13px;
+  top: 25%;
+  /*background: url(../img/icons/arrow-ac.png) no-repeat center center;*/ }
+
+.ac-container input:checked + label:after {
+  /*background-image: url(../img/icons/arrow-ac-up.png);*/ }
+
+.ac-container input {
+  display: none; }
+
+.ac-container article {
+  background: #ecf0f1;
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
+  transition: height 0.3s ease-in-out,  box-shadow 0.6s linear;
+  margin-bottom: 20px; }
+
+.ac-container input:checked ~ article {
+  transition: height 0.5s ease-in-out; }
+
+.ac-container, .list-l article p {
+  font-style: italic;
+  color: #777;
+  line-height: 23px;
+  font-size: 14px; }
+
+.ac-container input:checked ~ article.ac-small {
+  height: 140px; }
+
+.ac-container input:checked ~ article.ac-medium {
+  height: 180px; }
+
+.ac-container input:checked ~ article.ac-large {
+  height: 350px; }
+
+.ac-container input:checked ~ article.ac-ex-large {
+  height: 1000px; }
+
+.p2-legal {
+  font-style: normal;
+  color: #000;
+  line-height: 23px;
+  font-size: 14px;
+  padding: 20px !important; }
+
+.sub-title {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
